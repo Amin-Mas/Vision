@@ -74,7 +74,7 @@
                 </div>
                 <div class="col-md-8 vertical-center">
                     <p>
-                        With more than five years of practical experience managing diverse medical datasets,
+                        With more than five years of practical experience managing diverse medical imaging datasets,
                          combined with expertise in machine learning and optimization across various sectors,
                           I specialize in developing impactful solutions.
                 </div>
@@ -103,13 +103,13 @@
                     <br>
                     ➔ Introducing the first 3D segmentation algorithm for choroid (Dice=0.81)
                     <br>
-                    ➔ RNA-seq analysis (dimension reduction)
+                    ➔ Retina layer segmentation using AWS SageMaker (IoU=0.94)
                     <br>
                     ➔ Nerve activity signal processing (clustering)
                     <br>
                     ➔ EEG signal processing using CNN (AUC=0.84)
                     <br>
-                    ➔ Retina layer segmentation using AWS SageMaker (IoU=0.94)
+                    ➔ RNA-seq analysis (dimension reduction)
                     <br>
                     
  
@@ -271,132 +271,44 @@
         </div>
     </div>
 
+    
+
     <div id="projects" class="background-alt-nth">
-        <h2 class="heading">
-  OCT Research Agent (RAG using LLAMA3, Pubmed medical dataset)</h2>
-        <div class="container">
 
-
-            <div style="font-family: Arial, sans-serif; background-color: transparent; color: rgb(14, 1, 1); text-align: justify;">
-                <p>
-                    This project leverages a Retrieval-Augmented Generation (RAG) approach to enhance research on Optical Coherence Tomography (OCT) imaging by
-                     integrating advanced machine learning techniques. It utilizes a Hugging Face model to generate high-quality embeddings of OCT-related documents (more than 2000 documents),
-                      which are then stored and indexed in Pinecone, a vector database. Researchers can query this system to retrieve the most relevant information
-                       about OCT technologies. The RAG pipeline combines these embeddings with a language model to generate precise,
-                        contextually relevant answers, providing a robust tool for exploring and understanding OCT research advancements and methodologies.
-                </p>
-                <p>
-                    <a href="https://github.com/MOAMSA/OCT-Researcher-Agent" target="_blank">More details</a>
-                </p>
-            </div>
-    
-
-    
-            <!-- Example image block for Ray Casting visualization -->
-            <div class="image-container">
-                <img src="assets/thumbs/qa.png" alt="qa" class="zoom-image"style="width: 100%; height: auto; max-width: 200%; border: 2px solid #ddd; border-radius: 8px;">
-            </div>
-
-            <div class="keywords-container">
-                <span class="keyword">Llama 3</span>
-                <span class="keyword">RAG</span>
-                <span class="keyword">QA</span>
-                <span class="keyword">PUBMED Dataset</span>
-                <span class="keyword">OCT</span>
-            </div>
-
+        <div id="projects" class="background-alt-nth">
             <h2 class="heading">
-                Integrating scRNA-seq and scATAC-seq Data for Regulatory Interaction Inference</h2>
-                      <div class="container">
+      OCT Research Agent (RAG using LLAMA3, Pubmed medical dataset)</h2>
+            <div class="container">
     
-            <div style="font-family: Arial, sans-serif; background-color: transparent; color: rgb(14, 1, 1); text-align: justify;">
-                <p>
-                    This project provides a comprehensive guide on integrating scRNA-seq and scATAC-seq data to infer regulatory interactions using the GLUE framework.
-                     It starts with data preparation, where feature embeddings from both modalities are processed to extract highly-variable features and create a
-                      skeleton graph. This graph is essential for limiting the search space for regulatory connections and identifying potential regulatory
-                       interactions between RNA genes and ATAC peaks through cosine similarity scores.
-
-                    The model training phase then focuses on developing a predictive model using these
-                     embeddings to estimate regulatory scores, with a strong emphasis on parameter tuning and cross-validation
-                      to ensure accurate predictions. The model's performance is rigorously evaluated using various metrics. Following this,
-                       regulatory inference utilizes the trained model and embeddings to determine significant regulatory connections, applying
-                        a Q-value threshold of 0.05 for significance.
-                    
-                    Visualization of these regulatory interactions is achieved using pyGenomeTracks,
-                     which involves preparing BED and links files and configuring track files for effective representation.
-                      The project concludes with the construction of the TF-gene regulatory network, detailing the generation of a coexpression-based draft
-                       network with GRNBoost2, refinement using TF motif/ChIP-seq data, and pruning with cis-regulatory data to produce a refined network.
-                </p>
-                <p>
-                    <a href="https://github.com/MOAMSA/multiomics-Integration-/blob/master/Graph.ipynb" target="_blank">More details</a>
-                </p>
-            </div>
     
-
+                <div style="font-family: Arial, sans-serif; background-color: transparent; color: rgb(14, 1, 1); text-align: justify;">
+                    <p>
+                        This project leverages a Retrieval-Augmented Generation (RAG) approach to enhance research on Optical Coherence Tomography (OCT) imaging by
+                         integrating advanced machine learning techniques. It utilizes a Hugging Face model to generate high-quality embeddings of OCT-related documents (more than 2000 documents),
+                          which are then stored and indexed in Pinecone, a vector database. Researchers can query this system to retrieve the most relevant information
+                           about OCT technologies. The RAG pipeline combines these embeddings with a language model to generate precise,
+                            contextually relevant answers, providing a robust tool for exploring and understanding OCT research advancements and methodologies.
+                    </p>
+                    <p>
+                        <a href="https://github.com/MOAMSA/OCT-Researcher-Agent" target="_blank">More details</a>
+                    </p>
+                </div>
+        
     
-            <!-- Example image block for Ray Casting visualization -->
-            <div class="image-container">
-                <img src="assets/thumbs/tf.png" alt="Single cell RNA  Seq Data Analysis" class="zoom-image" style="width: 100%; height: auto; max-width: 200%; border: 2px solid #ddd; border-radius: 8px;"
-            </div>
-            </div>
-
-
-            <div class="keywords-container">
-                <span class="keyword">GLUE Framework</span>
-                <span class="keyword">Feature Embeddings</span>
-                <span class="keyword">Cosine Similarity</span>
-                <span class="keyword">Model Training</span>
-                <span class="keyword">TF-gene Regulatory Network</span>
-            </div>
-            
+        
+                <!-- Example image block for Ray Casting visualization -->
+                <div class="image-container">
+                    <img src="assets/thumbs/qa.png" alt="Single cell RNA  Seq Data Analysis" class="zoom-image" style="width: 100%; height: auto; max-width: 200%; border: 2px solid #ddd; border-radius: 8px;">
+                </div>
     
-        </div>
-    </div>
-
-    <div id="projects" class="background-alt-nth">
-        <h2 class="heading">Single cell RNA  Seq Data Analysis</h2>
-        <div class="container">
-    
-            <div style="font-family: Arial, sans-serif; background-color: transparent; color: rgb(14, 1, 1); text-align: justify;">
-                <p>
-                    Dimension reduction techniques like PCA, t-SNE, and UMAP are crucial for analyzing single-cell RNA-seq data by simplifying 
-                    the high-dimensional gene expression data into fewer dimensions, making it easier to visualize and interpret biological
-                     patterns and cell heterogeneity. The process involves several steps: loading and preprocessing the data, filtering
-                      cells and genes based on quality metrics, normalizing and log-transforming the data, and identifying highly
-                       variable genes. Principal Component Analysis (PCA) reduces dimensionality by focusing on principal
-                        components, followed by t-SNE and UMAP for further visualization. Clustering using algorithms
-                         like Leiden, along with differential expression analysis through methods such as t-test,
-                          Wilcoxon rank-sum test, and logistic regression, helps identify key marker genes and
-                           cell types, which are then visualized and compared to reveal distinct clusters
-                            and their biological significance.
-                </p>
-                <p>
-                    <a href="https://github.com/MOAMSA/Single-cell-RNA-seq-data/blob/main/DimensionReduction.ipynb" target="_blank">More details</a>
-                </p>
-            </div>
-    
-
-    
-            <!-- Example image block for Ray Casting visualization -->
-            <div class="image-container">
-                <img src="assets/thumbs/rna.png" alt="Single cell RNA  Seq Data Analysis" class="zoom-image" style="width: 100%; height: auto; max-width: 200%; border: 2px solid #ddd; border-radius: 8px;"
-            </div>>
-            </div>
-
-
-            <div class="keywords-container">
-                <span class="keyword">Dimensionality Reduction</span> 
-                <span class="keyword">Autoencoder</span>
-                <span class="keyword">t-SNE</span>
-                <span class="keyword">PCA</span>
-                <span class="keyword">UMAP</span>
-            </div>
-    
-        </div>
-    </div>
-
-
-    <div id="projects" class="background-alt-nth">
+                <div class="keywords-container">
+                    <span class="keyword">Llama 3</span>
+                    <span class="keyword">RAG</span>
+                    <span class="keyword">QA</span>
+                    <span class="keyword">PUBMED Dataset</span>
+                    <span class="keyword">OCT</span>
+                </div>
+            </div>     
         <h2 class="heading">OCTune</h2>
         <div class="container">
             <div style="font-family: Arial, sans-serif; background-color: transparent; color: rgb(14, 1, 1); text-align: justify;">
@@ -415,7 +327,72 @@
             <div class="image-container" id="second-image-container">
                 <img src="assets/thumbs/octune.png" alt="octune" alt="artifact" style="width: 100%; height: auto; max-width: 200%; border: 2px solid #ddd; border-radius: 8px;">
             </div>
+            <div class="keywords-container">
+                <span class="keyword">Explainable AI</span> 
+                <span class="keyword">Multi-solution</span>
+                <span class="keyword">Evalution</span>
+                <span class="keyword">OCTune</span>
+                <span class="keyword">Retina</span>
+                <span class="keyword">Choroid</span>
+
+
+            </div>  
+            <h2 class="heading">OCTune: Retina Layer Segmentation</h2>
+            <div style="font-family: Arial, sans-serif; background-color: transparent; color: rgb(14, 1, 1); text-align: justify;">
+                <p>
+
+                    I employed the U-Net neural network, a well-known architecture for image segmentation, to delineate retinal layers in healthy subjects.
+                     U-Net's encoder-decoder structure enabled efficient feature extraction and understanding by converging and diverging information.
+                      The model accurately identified the retinal vascular bed and tracked variations in the thickness of both superficial and deep retinal layers.
+
+                    The network architecture incorporated varying filter numbers, 3×3 kernels, and same-size padding to maintain input dimensions. Max pooling
+                     layers, with a 2×2 pool size, downscaled the spatial dimensions while preserving essential information and promoting translational invariance,
+                      aiding in focusing on retinal layer features. Up-convolutional layers, using a 2×2 kernel size and a stride of 2, were employed for up-sampling,
+                       restoring spatial details lost in earlier layers, which enhanced segmentation accuracy.
+                    
+                    Rectified Linear Unit (ReLU) activation in all convolutional layers added nonlinearity, enabling the network to capture complex patterns.
+                     To mitigate overfitting, dropout layers were introduced for regularization, along with L2 regularization to control model weights.
+                      The network concluded with a 1×1 convolutional layer using the Softmax activation function to generate the predicted segmentation mask.
+                       The Adam optimizer was used to minimize categorical cross-entropy loss during training.
+                </p>
+            </div>
             
+            <div class="image-container" id="second-image-container">
+                
+                <img src="assets/thumbs/oct_layers.png" alt="artifact" alt="artifact" style="width: 100%; height: auto; max-width: 200%; border: 2px solid #ddd; border-radius: 8px;">
+
+            </div>  
+               
+                <p>Schematic of retina Layers in OCT Imaging </p>
+            
+                <div style="font-family: Arial, sans-serif; background-color: transparent; color: rgb(14, 1, 1); text-align: justify;">
+            <p>
+
+                Figure A demonstrates the U-Net model's performance, which improved consistently throughout training. The Intersection over Union (IoU) began at 0.31
+                 and steadily increased, while the categorical cross-entropy loss decreased, reaching a value of 0.08, indicating good convergence and improved prediction
+                  accuracy. By the end of training, the IoU reached 0.94 for both the training and validation sets, reflecting a strong overlap between the predicted and 
+                  actual segmentation masks.
+
+                The U-Net segmentation process generated labeled images for each specific retinal layer, based on 2D B-scans extracted from 3D OCT images (Figure B).
+                 The model achieved an IoU of 0.93 on the test set, demonstrating high accuracy in retinal layer segmentation.
+                </p>
+            </div>
+            
+            <div class="image-container" id="second-image-container">
+                
+                <img src="assets/thumbs/layering.png" alt="artifact" alt="artifact" style="width: 100%; height: auto; max-width: 200%; border: 2px solid #ddd; border-radius: 8px;">
+
+               
+               
+                <p>OCTune: Retina Layer Segmentation using Unet </p>
+            </div>
+            <span class="keyword">Retina Layer Segmentation</span>
+            <span class="keyword">UNet</span>
+            <span class="keyword">OCTune</span>
+
+
+
+            <h2 class="heading">OCTune: Artifact Removal</h2>
             <div style="font-family: Arial, sans-serif; background-color: transparent; color: rgb(14, 1, 1); text-align: justify;">
                 <p>
 
@@ -429,10 +406,16 @@
                 
                 <img src="assets/thumbs/retina.png" alt="artifact" alt="artifact" style="width: 100%; height: auto; max-width: 200%; border: 2px solid #ddd; border-radius: 8px;">
 
+               
+               
                 <p>OCTune: Retina Artifact Removal and Image Enhancement </p>
             </div>
+            <span class="keyword">Artifact Removal</span>
+            <span class="keyword">Evalution</span>
+            <span class="keyword">OCTune</span>
 
 
+            <h2 class="heading">OCTune: Retina 2D Segmentation</h2>
             <div style="font-family: Arial, sans-serif; background-color: transparent; color: rgb(14, 1, 1); text-align: justify;">
                 <p>
 
@@ -458,7 +441,7 @@
 
             </div>  
             
-            
+            <h2 class="heading">OCTune: Choroid 3D Segmentation</h2>
 
             <div style="font-family: Arial, sans-serif; background-color: transparent; color: rgb(14, 1, 1); text-align: justify;">
                 <p>
@@ -490,7 +473,7 @@
             <span class="keyword">Unsupervised Algorithm</span>
         </div>
 
-
+        <h2 class="heading">OCTune: 3D OCT shadow Removal</h2>
 
         <div style="font-family: Arial, sans-serif; background-color: transparent; color: rgb(14, 1, 1); text-align: justify;">
             <p>
@@ -530,7 +513,7 @@
 <div id="projects" class="background-alt-nth">
 
     <div class="container">
-
+        <h2 class="heading">OCTune: Retina Diameter </h2>
 
         <div class="text-content-retina">
             <p>
@@ -595,101 +578,7 @@
 
 
 
-    <div id="projects" class="background-alt-nth">
-        <h2 class="heading">Real-time EEG Learning</h2>
-        <div class="container">
-            <div style="font-family: Arial, sans-serif; background-color: transparent; color: rgb(14, 1, 1); text-align: justify;">
-                <p>
-                    BioExam is an adaptive online learning system that integrates a Human-in-the-Loop Reinforcement Learning (RL) algorithm
-                     with real-time EEG biofeedback to address the challenges posed by the COVID-19-induced shift to online education.
-                      Unlike existing tools like SuperMemo and Anki, which rely on heuristic methods, BioExam uses RL to balance
-                       learning new material and reviewing old topics while considering students' physical and mental states.
-                
-                </p>
-            </div>
-    
 
-            <div class="image-container">
-                <img src="assets/thumbs/eeg.png" alt="eeg" class="zoom-image">
-            </div>
-            
-            <div style="font-family: Arial, sans-serif; background-color: transparent; color: rgb(14, 1, 1); text-align: justify;">
-                <p>
-                    This system incorporates EEG signals as secondary rewards to enhance learning efficiency and reduce
-                    trial numbers. By initializing with a pre-trained network based on human memory models, BioExam
-                    simulates student behavior to optimize performance. Utilizing low-cost EEG headsets and
-                    smartwatches, the system monitors attentiveness and physical conditions, providing
-                    real-time feedback to students to improve their learning outcomes.
-                </p>
-            </div>
-            
-            <div class="image-container" id="second-image-container">
-                
-                <img src="assets/thumbs/eeg1.png" alt="eeg1" style="width: 100%; height: auto; max-width: 200%; border: 2px solid #ddd; border-radius: 8px;">
-
-                <p>BioExam: Prototype for Real-time Assessment of Student EEG Signals to Enhance Learning</p>
-            </div>
-            
-            <div class="keywords-container">
-                <span class="keyword">EEG Signal Analysis</span> 
-                <span class="keyword">Reinforcement Learning</span>
-                <span class="keyword">Real-time Biofeedback</span>
-                <span class="keyword">Classification</span>
-                <span class="keyword">BioExam</span>
-            </div>
-            
-            
-            
- 
-
-
-
-    <div id="projects" class="background-alt-nth">
-        <h2 class="heading">Muscle Sympathetic Nerve Activity Clustering</h2>
-        <div class="container">
-            <!-- Description Block -->
-            <div style="font-family: Arial, sans-serif; background-color: transparent; color: rgb(14, 1, 1); text-align: justify;">
-                Muscle Sympathetic Nerve Activity (MSNA) signal clustering using Principal Component Analysis (PCA) involves reducing
-                 the complexity of high-dimensional signal data to uncover meaningful patterns. First, the raw MSNA signals are
-                  preprocessed to remove noise and normalize the data. PCA is then applied to transform the data into a lower-dimensional
-                   space by identifying the principal components that capture the most significant variance. This reduced feature set
-                    is used for clustering, typically with algorithms like k-means, to group similar signal segments. Each cluster
-                     represents distinct patterns in the MSNA signals, which can be analyzed for physiological or clinical insights. As it can be seen in the final figure,
-                      by simplifying the data with PCA, the clustering process becomes more efficient and reveals important signal
-                       characteristics.
-            </div>
-            <br>
-
-            <!-- Individual Image Blocks -->
-            <div class="image-block data-img">
-                <img src="assets/thumbs/msna.jpg" alt="Data Image" class="project-image">
-                <p>Insertion of needle to capture muscle sympathetic nerve activity</p>
-            </div>
-            <div class="image-block msna-img">
-                <img src="assets/thumbs/data.png" alt="MSNA Image" class="project-image">
-                <p>Raw Data</p>
-            </div>
-            <div class="image-block ap-img">
-                <img src="assets/thumbs/ap.png" alt="AP Image" class="project-image">
-                <p>Action potential extraction</p>
-            </div>
-
-            <div class="image-block result-img">
-                <img src="assets/thumbs/result.png" alt="Result Image"  style="width: 100%; height: auto; max-width: 200%; border: 2px solid #ddd; border-radius: 8px;">
-                <p>
-                    The bottom right plot displays spike shapes belonging to the two clusters, 
-                    where the red line indicates raised action potentials (AP) post-perturbation.</p>
-            </div>
-
-            <div class="keywords-container">
-                <span class="keyword">Clustering</span> 
-                <span class="keyword">MSNA Signal</span>
-                <span class="keyword">Dimension Reduction</span>
-                <span class="keyword">K-mean</span>
-                <span class="keyword">Unsupervised</span>
-            </div>
-        </div>
-    </div>
     
     
 
@@ -771,7 +660,7 @@
     
             <!-- Example image block for Ray Casting visualization -->
             <div class="image-container">
-                <img src="assets/thumbs/ray.png" alt="Ray Casting Visualization" class="zoom-image">
+                <img src="assets/thumbs/ray.png" alt="Ray Casting Visualization" class="zoom-image" style="width: 100%; height: auto; max-width: 200%; border: 2px solid #ddd; border-radius: 8px;">>
             </div>
 
 
@@ -787,7 +676,188 @@
     </div>
 
 
+
+            <h2 class="heading">
+                Integrating scRNA-seq and scATAC-seq Data for Regulatory Interaction Inference</h2>
+                      <div class="container">
     
+            <div style="font-family: Arial, sans-serif; background-color: transparent; color: rgb(14, 1, 1); text-align: justify;">
+                <p>
+                    This project provides a comprehensive guide on integrating scRNA-seq and scATAC-seq data to infer regulatory interactions using the GLUE framework.
+                     It starts with data preparation, where feature embeddings from both modalities are processed to extract highly-variable features and create a
+                      skeleton graph. This graph is essential for limiting the search space for regulatory connections and identifying potential regulatory
+                       interactions between RNA genes and ATAC peaks through cosine similarity scores.
+
+                    The model training phase then focuses on developing a predictive model using these
+                     embeddings to estimate regulatory scores, with a strong emphasis on parameter tuning and cross-validation
+                      to ensure accurate predictions. The model's performance is rigorously evaluated using various metrics. Following this,
+                       regulatory inference utilizes the trained model and embeddings to determine significant regulatory connections, applying
+                        a Q-value threshold of 0.05 for significance.
+                    
+                    Visualization of these regulatory interactions is achieved using pyGenomeTracks,
+                     which involves preparing BED and links files and configuring track files for effective representation.
+                      The project concludes with the construction of the TF-gene regulatory network, detailing the generation of a coexpression-based draft
+                       network with GRNBoost2, refinement using TF motif/ChIP-seq data, and pruning with cis-regulatory data to produce a refined network.
+                </p>
+                <p>
+                    <a href="https://github.com/MOAMSA/multiomics-Integration-/blob/master/Graph.ipynb" target="_blank">More details</a>
+                </p>
+            </div>
+    
+
+    
+            <!-- Example image block for Ray Casting visualization -->
+            <div class="image-container">
+                <img src="assets/thumbs/tf.png" alt="Single cell RNA  Seq Data Analysis" class="zoom-image" style="width: 100%; height: auto; max-width: 200%; border: 2px solid #ddd; border-radius: 8px;">>
+            </div>
+
+
+            <div class="keywords-container">
+                <span class="keyword">GLUE Framework</span>
+                <span class="keyword">Feature Embeddings</span>
+                <span class="keyword">Cosine Similarity</span>
+                <span class="keyword">Model Training</span>
+                <span class="keyword">TF-gene Regulatory Network</span>
+            </div>
+            
+    
+        </div>
+    </div>
+
+    <div id="projects" class="background-alt-nth">
+        <h2 class="heading">Single cell RNA  Seq Data Analysis</h2>
+        <div class="container">
+    
+            <div style="font-family: Arial, sans-serif; background-color: transparent; color: rgb(14, 1, 1); text-align: justify;">
+                <p>
+                    Dimension reduction techniques like PCA, t-SNE, and UMAP are crucial for analyzing single-cell RNA-seq data by simplifying 
+                    the high-dimensional gene expression data into fewer dimensions, making it easier to visualize and interpret biological
+                     patterns and cell heterogeneity. The process involves several steps: loading and preprocessing the data, filtering
+                      cells and genes based on quality metrics, normalizing and log-transforming the data, and identifying highly
+                       variable genes. Principal Component Analysis (PCA) reduces dimensionality by focusing on principal
+                        components, followed by t-SNE and UMAP for further visualization. Clustering using algorithms
+                         like Leiden, along with differential expression analysis through methods such as t-test,
+                          Wilcoxon rank-sum test, and logistic regression, helps identify key marker genes and
+                           cell types, which are then visualized and compared to reveal distinct clusters
+                            and their biological significance.
+                </p>
+                <p>
+                    <a href="https://github.com/MOAMSA/Single-cell-RNA-seq-data/blob/main/DimensionReduction.ipynb" target="_blank">More details</a>
+                </p>
+            </div>
+    
+
+    
+            <!-- Example image block for Ray Casting visualization -->
+            <div class="image-container">
+                <img src="assets/thumbs/rna.png" alt="Single cell RNA  Seq Data Analysis" class="zoom-image" style="width: 100%; height: auto; max-width: 200%; border: 2px solid #ddd; border-radius: 8px;">>
+            </div>
+
+
+            <div class="keywords-container">
+                <span class="keyword">Dimensionality Reduction</span> 
+                <span class="keyword">Autoencoder</span>
+                <span class="keyword">t-SNE</span>
+                <span class="keyword">PCA</span>
+                <span class="keyword">UMAP</span>
+            </div>
+    
+        </div>
+    </div>
+
+    <div id="projects" class="background-alt-nth">
+        <h2 class="heading">Real-time EEG Learning</h2>
+        <div class="container">
+            <div style="font-family: Arial, sans-serif; background-color: transparent; color: rgb(14, 1, 1); text-align: justify;">
+                <p>
+                    BioExam is an adaptive online learning system that integrates a Human-in-the-Loop Reinforcement Learning (RL) algorithm
+                     with real-time EEG biofeedback to address the challenges posed by the COVID-19-induced shift to online education.
+                      Unlike existing tools like SuperMemo and Anki, which rely on heuristic methods, BioExam uses RL to balance
+                       learning new material and reviewing old topics while considering students' physical and mental states.
+                
+                </p>
+            </div>
+    
+
+            <div class="image-container">
+                <img src="assets/thumbs/eeg.png" alt="eeg" class="zoom-image" style="width: 100%; height: auto; max-width: 200%; border: 2px solid #ddd; border-radius: 8px;">>
+            </div>
+            
+            <div style="font-family: Arial, sans-serif; background-color: transparent; color: rgb(14, 1, 1); text-align: justify;">
+                <p>
+                    This system incorporates EEG signals as secondary rewards to enhance learning efficiency and reduce
+                    trial numbers. By initializing with a pre-trained network based on human memory models, BioExam
+                    simulates student behavior to optimize performance. Utilizing low-cost EEG headsets and
+                    smartwatches, the system monitors attentiveness and physical conditions, providing
+                    real-time feedback to students to improve their learning outcomes.
+                </p>
+            </div>
+            
+            <div class="image-container" id="second-image-container">
+                
+                <img src="assets/thumbs/eeg1.png" alt="eeg1" style="width: 100%; height: auto; max-width: 200%; border: 2px solid #ddd; border-radius: 8px;">
+
+                <p>BioExam: Prototype for Real-time Assessment of Student EEG Signals to Enhance Learning</p>
+            </div>
+            
+            <div class="keywords-container">
+                <span class="keyword">EEG Signal Analysis</span> 
+                <span class="keyword">Reinforcement Learning</span>
+                <span class="keyword">Real-time Biofeedback</span>
+                <span class="keyword">Classification</span>
+                <span class="keyword">BioExam</span>
+            </div>
+            
+            
+            
+
+
+    <div id="projects" class="background-alt-nth">
+        <h2 class="heading">Muscle Sympathetic Nerve Activity Clustering</h2>
+        <div class="container">
+            <!-- Description Block -->
+            <div style="font-family: Arial, sans-serif; background-color: transparent; color: rgb(14, 1, 1); text-align: justify;">
+                Muscle Sympathetic Nerve Activity (MSNA) signal clustering using Principal Component Analysis (PCA) involves reducing
+                 the complexity of high-dimensional signal data to uncover meaningful patterns. First, the raw MSNA signals are
+                  preprocessed to remove noise and normalize the data. PCA is then applied to transform the data into a lower-dimensional
+                   space by identifying the principal components that capture the most significant variance. This reduced feature set
+                    is used for clustering, typically with algorithms like k-means, to group similar signal segments. Each cluster
+                     represents distinct patterns in the MSNA signals, which can be analyzed for physiological or clinical insights. As it can be seen in the final figure,
+                      by simplifying the data with PCA, the clustering process becomes more efficient and reveals important signal
+                       characteristics.
+            </div>
+            <br>
+
+            <!-- Individual Image Blocks -->
+            <div class="image-block data-img">
+                <img src="assets/thumbs/msna.jpg" alt="Data Image" class="project-image" style="width: 100%; height: auto; max-width: 200%; border: 2px solid #ddd; border-radius: 8px;">>
+                <p>Insertion of needle to capture muscle sympathetic nerve activity</p>
+            </div>
+            <div class="image-block msna-img">
+                <img src="assets/thumbs/data.png" alt="MSNA Image" class="project-image" style="width: 100%; height: auto; max-width: 200%; border: 2px solid #ddd; border-radius: 8px;">>
+                <p>Raw Data</p>
+            </div>
+            <div class="image-block ap-img">
+                <img src="assets/thumbs/ap.png" alt="AP Image" class="project-image" style="width: 100%; height: auto; max-width: 200%; border: 2px solid #ddd; border-radius: 8px;">>
+                <p>Action potential extraction</p>
+            </div>
+
+            <div class="image-block result-img">
+                <img src="assets/thumbs/result.png" alt="Result Image"  style="width: 100%; height: auto; max-width: 200%; border: 2px solid #ddd; border-radius: 8px;">
+                <p>
+                    The bottom right plot displays spike shapes belonging to the two clusters, 
+                    where the red line indicates raised action potentials (AP) post-perturbation.</p>
+            </div>
+
+            <div class="keywords-container">
+                <span class="keyword">Clustering</span> 
+                <span class="keyword">MSNA Signal</span>
+                <span class="keyword">Dimension Reduction</span>
+                <span class="keyword">K-mean</span>
+                <span class="keyword">Unsupervised</span>
+            </div>
+        </div>
+    </div>
 
     <div id="projects" class="background-alt-nth">
         <h2 class="heading">2D Two-Phase Oil Reservoir Simulation</h2>
